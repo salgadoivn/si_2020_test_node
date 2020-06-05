@@ -6,7 +6,8 @@ var Auto = require('../model/auto');
 
 router.get('/',(req,res,next)=>{
   Auto.find( {} , (err,datos)=>{
-    res.status(200).json(datos);
+    if(err)res.status(400).json({mensaje:"Error en api"});
+    else res.status(200).json(datos);
   });
 });
 //autos -> _id

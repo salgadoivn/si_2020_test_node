@@ -8,12 +8,12 @@ router.get('/', function(req, res, next) {
   });
 });
 
-/*
+
 router.get('/:id',(req,res,next)=>{
   request('http://localhost:3000/autos'+req.params.id,(err,res,next)=>{
-    res.render({});
+    res.render('perfil',{'datos':JSON.parse(body)});
   });
 });
-*/
+
 
 module.exports = router;
