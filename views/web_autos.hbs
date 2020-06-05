@@ -1,0 +1,15 @@
+<h1>Web autos</h1>
+<div class="row">
+{{#each data}}
+ <div class="col col-3 m-5">
+    <div class="card" style="width:400px">
+    <img class="card-img-top" src="{{foto}}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">{{marca}}</h4>
+      <p class="card-text">{{submarca}}</p>
+      <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+    </div>
+  </div>
+  </div>
+  {{/each}}
+</div>
